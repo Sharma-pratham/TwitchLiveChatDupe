@@ -48,21 +48,24 @@ I have written javadocs in all the files that require except for Model files tha
 To test the api's I have used postman json, the service runs by default on port 8080 via tomcat.
 Below are the sample requests for all th endpoints that I have created.
 
-##ProfileController
+### ProfileController
 
 POST /api/profiles/signup
 GET /api/profiles/{id}
 PUT /api/profiles/{id}
 POST /api/profiles/{id}/follow
 POST /api/profiles/{id}/unfollow
-NotificationController
+
+### NotificationController
 
 POST /api/notifications/sendNotification
 POST /api/notifications/sendEmail
-StreamController
+
+### StreamController
 
 POST /api/streams/start
-CommandController
+
+### CommandController
 
 POST /api/commands/setAdmin
 POST /api/commands/unsetAdmin
@@ -79,7 +82,7 @@ POST /api/commands/setDescription
 
 ### ProfileController
 
-### Signup
+### 1. Signup
 
 URL: http://localhost:8080/api/profiles/signup
 Method: POST
@@ -93,7 +96,7 @@ JSON Body:
   "avatar": "avatarUrl"
 }
 
-### Get Profile
+### 2. Get Profile
 
 URL: http://localhost:8080/api/profiles/{id}
 Method: GET
@@ -111,7 +114,7 @@ JSON Body:
   "avatar": "newAvatarUrl"
 }
 
-### Follow Profile
+### 3. Follow Profile
 
 URL: http://localhost:8080/api/profiles/{id}/follow
 Method: POST
@@ -121,7 +124,7 @@ JSON Body:
   "followerId": "11111111-1111-1111-1111-111111111111"
 }
 
-### Unfollow Profile
+### 4. Unfollow Profile
 
 URL: http://localhost:8080/api/profiles/{id}/unfollow
 Method: POST
@@ -131,7 +134,7 @@ JSON Body:
 }
 
 ### NotificationController
-### Send Notification
+### 6. Send Notification
 
 URL: http://localhost:8080/api/notifications/sendNotification
 Method: POST
@@ -142,7 +145,7 @@ JSON Body:
   "message": "This is a notification message"
 }
 
-### Send Email
+### 7.Send Email
 
 URL: http://localhost:8080/api/notifications/sendEmail
 Method: POST
@@ -155,7 +158,7 @@ JSON Body:
 }
 
 ### StreamController
-### Start Stream
+### 8.Start Stream
 
 URL: http://localhost:8080/api/streams/start
 Method: POST
@@ -165,7 +168,7 @@ JSON Body:
 }
 
 ### CommandController
-### Set Admin
+### 9.Set Admin
 
 URL: http://localhost:8080/api/commands/setAdmin
 Method: POST
@@ -178,7 +181,7 @@ JSON Body:
   "targetUser": "targetUser"
 }
 
-### Unset Admin
+### 10. Unset Admin
 
 URL: http://localhost:8080/api/commands/unsetAdmin
 Method: POST
@@ -191,7 +194,7 @@ JSON Body:
   "targetUser": "targetUser"
 }
 
-### Mute
+### 11. Mute
 
 URL: http://localhost:8080/api/commands/mute
 Method: POST
@@ -204,7 +207,7 @@ JSON Body:
   "targetUser": "targetUser"
 }
 
-### Unmute
+### 12. Unmute
 
 URL: http://localhost:8080/api/commands/unmute
 Method: POST
@@ -216,7 +219,7 @@ JSON Body:
   "targetUser": "targetUser"
 }
 
-### Ban
+### 13. Ban
 
 URL: http://localhost:8080/api/commands/ban
 Method: POST
@@ -229,7 +232,7 @@ JSON Body:
   "targetUser": "targetUser"
 }
 
-### Unban
+### 14. Unban
 
 URL: http://localhost:8080/api/commands/unban
 Method: POST
@@ -242,7 +245,7 @@ JSON Body:
   "targetUser": "targetUser"
 }
 
-### Suspend
+### 15. Suspend
 
 URL: http://localhost:8080/api/commands/suspend
 Method: POST
@@ -254,7 +257,7 @@ JSON Body:
   "command": "/suspend"
 }
 
-### Set Title
+### 16. Set Title
 
 URL: http://localhost:8080/api/commands/setTitle
 Method: POST
@@ -267,7 +270,7 @@ JSON Body:
   "additionalData": "New Channel Title"
 }
 
-### Set Description
+### 17. Set Description
 
 URL: http://localhost:8080/api/commands/setDescription
 Method: POST
