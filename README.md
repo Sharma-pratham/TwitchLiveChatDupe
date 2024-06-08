@@ -1,19 +1,18 @@
 # TwitchLiveChatDupe
  
-## Hey all
+Hey all
+This is the project repo that is based of the backend assignment. 
 
-## This is the project repo that is based of the backend assignment. 
-
-### I have chosen to implement this project using Spring boot 3.3.0 on Java 17 and maven. I used spring intializr website to create the inital project on the said settings.
-### I created the postgres db on postgres sql 16 on using pgadmin 4 v8.
+I have chosen to implement this project using Spring boot 3.3.0 on Java 17 and maven. I used spring intializr website to create the inital project on the said settings.
+I created the postgres db on postgres sql 16 on using pgadmin 4 v8.
 
 ## Project specifics
 
-### I was unable to put in the oauth2 part but apart from that all the services and fonctionnalities have been implmented.
+I was unable to put in the oauth2 part but apart from that all the services and fonctionnalities have been implmented.
 
-### Push notification and email send outs are just written as sysouts as building a whole email service required me to setup firebase free cloud service that ended up giving me issues hence I did not go through with it.
+Push notification and email send outs are just written as sysouts as building a whole email service required me to setup firebase free cloud service that ended up giving me issues hence I did not go through with it.
 
-### I have written javadocs in all the files that require except for Model files that describes all the fonctionnalities. Addtionally I have setup swagger for the restcontrollers.
+I have written javadocs in all the files that require except for Model files that describes all the fonctionnalities. Addtionally I have setup swagger for the restcontrollers.
 
 ## Please find below the additonal DB tables I have created for the project apart from the profiles table metioned in the backend task repo
 
