@@ -44,10 +44,11 @@ I have written javadocs in all the files that require except for Model files tha
     ban BOOLEAN DEFAULT FALSE
 );
 
-## To test the api's I have used postman json, the service runs by default on port 8080 via tomcat.
-## Below are the sample requests for all th endpoints that I have created.
+## Testing
+To test the api's I have used postman json, the service runs by default on port 8080 via tomcat.
+Below are the sample requests for all th endpoints that I have created.
 
-### ProfileController
+##ProfileController
 
 POST /api/profiles/signup
 GET /api/profiles/{id}
