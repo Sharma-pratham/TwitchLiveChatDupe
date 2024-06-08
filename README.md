@@ -50,32 +50,32 @@ Below are the sample requests for all th endpoints that I have created.
 
 ### ProfileController
 
-POST /api/profiles/signup
-GET /api/profiles/{id}
-PUT /api/profiles/{id}
-POST /api/profiles/{id}/follow
-POST /api/profiles/{id}/unfollow
+1. POST /api/profiles/signup
+2. GET /api/profiles/{id}
+3. PUT /api/profiles/{id}
+4. POST /api/profiles/{id}/follow
+5. POST /api/profiles/{id}/unfollow
 
 ### NotificationController
 
-POST /api/notifications/sendNotification
-POST /api/notifications/sendEmail
+6. POST /api/notifications/sendNotification
+7 .POST /api/notifications/sendEmail
 
 ### StreamController
 
-POST /api/streams/start
+8. POST /api/streams/start
 
 ### CommandController
 
-POST /api/commands/setAdmin
-POST /api/commands/unsetAdmin
-POST /api/commands/mute
-POST /api/commands/unmute
-POST /api/commands/ban
-POST /api/commands/unban
-POST /api/commands/suspend
-POST /api/commands/setTitle
-POST /api/commands/setDescription
+9. POST /api/commands/setAdmin
+10. POST /api/commands/unsetAdmin
+11. POST /api/commands/mute
+12. POST /api/commands/unmute
+13. POST /api/commands/ban
+14. POST /api/commands/unban
+15. POST /api/commands/suspend
+16. POST /api/commands/setTitle
+17. POST /api/commands/setDescription
 
 ### POSTMAN json bodies and urls
 
