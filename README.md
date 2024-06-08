@@ -50,7 +50,7 @@ Below are the sample requests for all th endpoints that I have created.
 
 ### ApplicationController
 0. status - health check return application is running
-1. POST signup
+1. POST -  /signup
 
 ### ProfileController
 
@@ -83,12 +83,11 @@ Below are the sample requests for all th endpoints that I have created.
 
 ### POSTMAN json bodies and urls
 
-
-### ProfileController
+### Application Contoller
 
 ### 1. Signup
 
-URL: http://localhost:8080/api/profiles/signup
+URL: http://localhost:8080/signup
 Method: POST
 JSON Body:
 
@@ -99,6 +98,8 @@ JSON Body:
   "password": "password123",
   "avatar": "avatarUrl"
 }
+
+### ProfileController
 
 ### 2. Get Profile
 
