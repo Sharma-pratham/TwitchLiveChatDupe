@@ -16,19 +16,19 @@ I have written javadocs in all the files that require except for Model files tha
 
 ## Please find below the additonal DB tables I have created for the project apart from the profiles table metioned in the backend task repo
 
-CREATE TABLE followers (
+1. CREATE TABLE followers (
     profile_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
     follower_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
     PRIMARY KEY (profile_id, follower_id)
 );
 
-CREATE TABLE channels (
+2. CREATE TABLE channels (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     name VARCHAR(255) UNIQUE NOT NULL,
     owner_id UUID REFERENCES profiles(id) ON DELETE CASCADE
 );
 
-CREATE TABLE chat_messages (
+3. CREATE TABLE chat_messages (
     id UUID PRIMARY KEY,
     from_user VARCHAR(255) NOT NULL,
     text TEXT NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE chat_messages (
     timestamp TIMESTAMP NOT NULL
 );
 
-CREATE TABLE users (
+4. CREATE TABLE users (
     id UUID PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
     role VARCHAR(50) NOT NULL,
