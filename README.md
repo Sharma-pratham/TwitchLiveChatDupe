@@ -48,9 +48,13 @@ I have written javadocs in all the files that require except for Model files tha
 To test the api's I have used postman json, the service runs by default on port 8080 via tomcat.
 Below are the sample requests for all th endpoints that I have created.
 
+### ApplicationController
+0. status - health check return application is running
+1. POST signup
+
 ### ProfileController
 
-1. POST /api/profiles/signup
+
 2. GET /api/profiles/{id}
 3. PUT /api/profiles/{id}
 4. POST /api/profiles/{id}/follow
